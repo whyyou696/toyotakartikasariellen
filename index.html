@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link rel="icon" type="image/x-icon" href="/assets/logo1.png">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Carserving</title>
+  </head>
+  <body>
+    <div class="fabs" onclick="toggleBtn()">
+      <div class="action">
+        <i class="fas fa-comment" id="add"></i>
+        <i class="fas fa-times" id="remove" style="display: none"></i>
+      </div>
+
+      <div class="btns">
+        <a href="https://www.facebook.com/Promo Toyota Malang Jawa Timur" class="btn" style="background: #3b5999"
+          ><i class="fab fa-facebook-f"></i
+        >
+      </a>
+        <a href="https://wa.me/6282142544990" class="btn" style="background: #25D366"
+          ><i class="fab fa-whatsapp"></i
+        ></a>
+        <a href="https://www.instagram.com/ellen.promotoyota/" class="btn" style="background:#e4405f"
+          ><i class="fab fa-instagram"></i
+        ></a>
+      </div>
+    </div>
+  </body>
+  
+    <header class="header">
+      <nav>
+        <div class="nav__bar">
+          <div class="logo nav__logo">
+            <a href="#"><img src="assets/logo.png" alt="logo" /></a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-3-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#service">Layanan</a></li>
+          <li><a href="#price">Produk</a></li>
+          <li><a href="#dokumentasi">Dokumentasi</a></li>
+          <li><a href="#promo">Promo</a></li>
+          <li><a href="#client">Klien</a></li>
+        </ul>
+      </nav>
+      <div class="section__container header__container" id="home">
+        <div class="header__content">
+          <h1>Temukan Mobil Toyota Impian Anda Disini</h1>
+        </div>
+      </div>
+    </header>
+
+    <section class="banner__container">
+      <div class="banner__card">
+        <h4>Memberikan Kendaraan Impian Anda Dengan Harga Terjangkau.</h4>
+      </div>
+      <div class="banner__card">
+        <h4>Dapatkan Promo Menarik Serta Pelayanan Cepat Disini.</h4>
+      </div>
+      <div class="banner__image">
+        <img src="assets/header.jpg" alt="banner" />
+      </div>
+    </section>
+
+    <section class="section__container experience__container" id="about">
+      <div class="experience__image">
+        <img src="assets/profile1.png" alt="experience" />
+      </div>
+      <div class="experience__content">
+        <h2 class="section__header">
+          Hallo, Saya <span class="text__style">ELLEN TSANA'</span>
+        </h2>
+        <p class="section__subheader">Perkenalkan saya ELLEN (Brand Ambassador), Dealer Resmi Toyota Kartika Sari, Malang.
+          Saya akan membantu Anda dalam memiliki kendaraan Toyota Impian anda dengan harga yang terjangkau dan terpercaya di Jawa Timur dan sekitarnya berikut informasi tentang layanan kami:</p>
+        <div class="section__description">
+        <li>Pembayaran Tunai dan Kredit</li>
+        <li>Harga Terbaik se Jatim</li> 
+        <li>Proses Cepat dan Aman</li>
+        <li>Dp dan Angsuran Ringan</li>
+        <li>Bisa Tukar Tambah Semua Merk</li>
+        <li>Test Drive Mobil Baru</li>
+        <li>Promo Terbaik untuk Anda</li>
+      </div>
+      </div>
+    </section>
+
+    <section class="service" id="service">
+      <div class="section__container service__container">
+        <h2 class="section__header">Layanan <span class="text__style">Kami.</span></h2>
+        <div class="service__grid">
+          <div class="service__card">
+            <img src="assets/trade.png" alt="service" />
+            <h4>Trade In</h4>
+            <p>
+              Anda dapat melakukan tukar tambah unit mobil lama punya anda dengan mobil baru dengan harga tinggi.
+            </p>
+          </div>
+          <div class="service__card">
+            <img src="assets/booking.png" alt="service" />
+            <h4>Booking Service</h4>
+            <p>
+              Anda dapat menentukan kapan saja waktu untuk service sesuai keinginan anda.
+            </p>
+          </div>
+          <div class="service__card">
+            <img src="assets/accesories.png" alt="service" />
+            <h4>Aksesoris</h4>
+            <p>
+              Kami Menyediakan berbagai aksesoris untuk meningkatkan penampilan mobil toyota anda.
+            </p>
+          </div>
+          <div class="service__card">
+            <img src="assets/sparepart.png" alt="service" />
+            <h4>Spare Parts</h4>
+            <p>
+              Kami Menyediakan suku cadang dengan jaminan kualitas original toyota.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- cars section -->
+    <section class="section__container price__container" id="price">
+      <h2 class="section__header">Produk <span class="text__style">Kami.</span></h2>
+      <!-- Images Filter Buttons Section -->
+      <div class="container">
+        <div class="row mt-5" id="filter-buttons">
+          <div class="col-12">
+            <button class="btn1 mb-2 mx-1 active" data-filter="MPV">MPV</button>
+            <button class="btn1 mb-2 mx-1" data-filter="SUV">SUV</button>
+            <button class="btn1 mb-2 mx-1" data-filter="Hatchback">Hatchback</button>
+            <button class="btn1 mb-2 mx-1" data-filter="Sedan">Sedan</button>
+            <button class="btn1 mb-2 mx-1" data-filter="Sport">Sport</button>
+            <button class="btn1 mb-2 mx-1" data-filter="Commercial">Commercial</button>
+          </div>
+        </div>
+  
+        <!-- Filterable Images / Cards Section -->
+        <div class="row px-2 mt-4 gap-3" id="filterable-cards">
+          
+          <!-- MPV -->
+          <!-- innova_zenix -->
+          <div class="card p-0" data-name="MPV">
+            <img src="assets/mpv/innova_zenix.png" alt="img" />
+            <div class="card-body">
+              <h4 class="card-title">All New Innova Zenix</h4>
+              <p class="card-text">
+                Starting From Rp425.600.000
+              </p>
+              <div class="card-links">
+                <a href="https://drive.google.com/file/d/1VwBfU5uOk-C8SGdTRoHFNPbXMj4HvgCL/view?usp=sharing" class="price-list-link">
+                    <i class="fas fa-file-alt"></i> Price List
+                </a>
+                <a href="https://wa.me/6282142544990" class="whatsapp-link">
+                    <i class="fab fa-whatsapp"></i> Contact Me
+                </a>
+            </div>
+              </div>
+          </div>
+
+          <!-- avanza -->
+          <div class="card p-0" data-name="MPV">
+            <img src="assets/mpv/avanza.png" alt="img" />
+            <div class="card-body">
+              <h4 class="card-title">All New Avanza</h4>
+              <p class="card-text">
+                Starting From Rp237.100.000</p>
+                <div class="card-links">
+                  <a href="https://drive.google.com/file/d/1VwBfU5uOk-C8SGdTRoHFNPbXMj4HvgCL/view?usp=sharing" class="price-list-link">
+                      <i class="fas fa-file-alt"></i> Price List
+                  </a>
+                  <a href="https://wa.me/6282142544990" class="whatsapp-link">
+                      <i class="fab fa-whatsapp"></i> Contact Me
+                  </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- calya -->          
+          <div class="card p-0" data-name="MPV">
+            <img src="assets/mpv/calya.png" alt="img" />
+            <div class="card-body">
+              <h4 class="card-title">New Calya</h4>
+              <p class="card-text">
+                Starting From Rp164.700.000</p>
+                <div class="card-links">
+                  <a href="https://drive.google.com/file/d/1VwBfU5uOk-C8SGdTRoHFNPbXMj4HvgCL/view?usp=sharing" class="price-list-link">
+                      <i class="fas fa-file-alt"></i> Price List
+                  </a>
+                  <a href="https://wa.me/6282142544990" class="whatsapp-link">
+                      <i class="fab fa-whatsapp"></i> Contact Me
+                  </a>
+              </div>
+              </div>
+          </div>
+
+          <!-- innova -->
+          <div class="card p-0" data-name="MPV">
+            <img src="assets/mpv/innova.png" alt="img" />
+            <div class="card-body">
+              <h4 class="card-title">New Kijang innova</h4>
+              <p class="card-text">
+                Starting From Rp379.100.000</p>
+                <div class="card-links">
+                  <a href="https://drive.google.com/file/d/1VwBfU5uOk-C8SGdTRoHFNPbXMj4HvgCL/view?usp=sharing" class="price-list-link">
+                      <i class="fas fa-file-alt"></i> Price List
+                  </a>
+                  <a href="https://wa.me/6282142544990" class="whatsapp-link">
+                      <i class="fab fa-whatsapp"></i> Contact Me
+                  </a>
+              </div>
+              </div>
+          </div>
+
+          <!-- Voxy -->
+          <div class="card p-0" data-name="MPV">
+            <img src="assets/mpv/voxy.png" alt="img" />
+            <div class="card-body">
+              <h4 class="card-title">New Voxy</h4>
+              <p class="card-text">
+                Starting From Rp607.800.000</p>
+                <div class="card-links">
+                  <a href="https://drive.google.com/file/d/1VwBfU5uOk-C8SGdTRoHFNPbXMj4HvgCL/view?usp=sharing" class="price-list-link">
+                      <i class="fas fa-file-alt"></i> Price List
+                  </a>
+                  <a href="https://wa.me/6282142544990" class="whatsapp-link">
+                      <i class="fab fa-whatsapp"></i> Contact Me
+                  </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Alphard -->
+          <div class="card p-0" data-name="MPV">
+            <img src="assets/mpv/alphard.png" alt="img" />
+            <div class="card-body">
+              <h4 class="card-title">All New Alphard</h4>
+              <p class="card-text">
+                Starting From Rp1.814.700.000</p>
+                <div class="card-links">
+                  <a href="https://drive.google.com/file/d/1VwBfU5uOk-C8SGdTRoHFNPbXMj4HvgCL/view?usp=sharing" class="price-list-link">
+                      <i class="fas fa-file-alt"></i> Price List
+                  </a>
+                  <a href="https://wa.me/6282142544990" class="whatsapp-link">
+                      <i class="fab fa-whatsapp"></i> Contact Me
+                  </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- SUV -->
+          <!-- Yaris Cross -->
+          <div class="card p-0" data-name="SUV">
+            <img src="assets/suv/yaris_cross.png" alt="img" />
+            <div class="card-body">
+              <h4/h4 class="card-title">All New Yaris Cross</h4>
+              <p class="card-text">
+                Starting From Rp351.000.000</p>
+                <div class="card-links">
+                  <a href="https://drive.google.com/file/d/1VwBfU5uOk-C8SGdTRoHFNPbXMj4HvgCL/view?usp=sharing" class="price-list-link">
+                      <i class="fas fa-file-alt"></i> Price List
+                  </a>
+                  <a href="https://wa.me/6282142544990" class="whatsapp-link">
+                      <i class="fab fa-whatsapp"></i> Contact Me
+                  </a>
+              </div>
+              </div>
+          </div>
+
+          <!-- Corrolla Cross -->
+          <div class="card p-0" data-name="SUV">
+            <img src="assets/suv/corrolla_cross.png" alt="img" />
+            <div class="card-body">
+              <h4/h4 class="card-title">New Corrolla Cross</h4>
+              <p class="card-text">
+                Starting From Rp568.200.000</p>
+                <div class="card-links">
+                  <a href="https://drive.google.com/file/d/1VwBfU5uOk-C8SGdTRoHFNPbXMj4HvgCL/view?usp=sharing" class="price-list-link">
+                      <i class="fas fa-file-alt"></i> Price List
+                  </a>
+                  <a href="https://wa.me/6282142544990" class="whatsapp-link">
+                      <i class="fab fa-whatsapp"></i> Contact Me
+                  </a>
+              </div>
+              </div>
+          </div>
+
+          <!-- Bz4x -->
+          <div class="card p-0" data-name="SUV">
+            <img src="assets/suv/bz4x.png" alt="img" />
+            <div class="card-body">
+              <h4/h4 class="card-title">All New Bz4x</h4>
+              <p class="card-text">
+                Starting From Rp1.190.000.000</p>
+                <div class="card-links">
+                  <a href="https://drive.google.com/file/d/1VwBfU5uOk-C8SGdTRoHFNPbXMj4HvgCL/view?usp=sharing" class="price-list-link">
+                      <i class="fas fa-file-alt"></i> Price List
+                  </a>
+                  <a href="https://wa.me/6282142544990" class="whatsapp-link">
+                      <i class="fab fa-whatsapp"></i> Contact Me
+                  </a>
+              </div>
+              </div>
+          </div>
+
+          
+          <!-- Fortuner -->
+          <div class="card p-0" data-name="SUV">
+            <img src="assets/suv/fortuner.png" alt="img" />
+            <div class="card-body">
+              <h4/h4 class="card-title">All New Fortuner</h4>
+              <p class="card-text">
+                Starting From Rp564.200.000 </p>
+                <div class="card-links">
+                  <a href="https://drive.google.com/file/d/1VwBfU5uOk-C8SGdTRoHFNPbXMj4HvgCL/view?usp=sharing" class="price-list-link">
+                      <i class="fas fa-file-alt"></i> Price List
+                  </a>
+                  <a href="https://wa.me/6282142544990" class="whatsapp-link">
+                      <i class="fab fa-whatsapp"></i> Contact Me
+                  </a>
+              </div>
+            </div>
+          </div>
+
+         <!-- Raize -->
+         <div class="card p-0" data-name="SUV">
+          <img src="assets/suv/raize.png" alt="img" />
+          <div class="card-body">
+            <h4/h4 class="card-title">All New Raize</h4>
+            <p class="card-text">
+              Starting From Rp235.000.000</p>
+              <div class="card-links">
+                <a href="https://drive.google.com/file/d/1VwBfU5uOk-C8SGdTRoHFNPbXMj4HvgCL/view?usp=sharing" class="price-list-link">
+                    <i class="fas fa-file-alt"></i> Price List
+                </a>
+                <a href="https://wa.me/6282142544990" class="whatsapp-link">
+                    <i class="fab fa-whatsapp"></i> Contact Me
+                </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Land Cruiser -->
+        <div class="card p-0" data-name="SUV">
+          <img src="assets/suv/land_cruiser.png" alt="img" />
+          <div class="card-body">
+            <h4/h4 class="card-title">All New Land Cruiser</h4>
+            <p class="card-text">
+              Starting From Rp2.533.400.000</p>
+              <div class="card-links">
+                <a href="https://drive.google.com/file/d/1VwBfU5uOk-C8SGdTRoHFNPbXMj4HvgCL/view?usp=sharing" class="price-list-link">
+                    <i class="fas fa-file-alt"></i> Price List
+                </a>
+                <a href="https://wa.me/6282142544990" class="whatsapp-link">
+                    <i class="fab fa-whatsapp"></i> Contact Me
+                </a>
+            </div>
+          </div>
+        </div>
+
+        
+        <!-- Rush -->
+        <div class="card p-0" data-name="SUV">
+          <img src="assets/suv/rush.png" alt="img" />
+          <div class="card-body">
+            <h4/h4 class="card-title">New Rush</h4>
+            <p class="card-text">
+              Starting From Rp282.700.000</p>
+              <div class="card-links">
+                <a href="https://drive.google.com/file/d/1VwBfU5uOk-C8SGdTRoHFNPbXMj4HvgCL/view?usp=sharing" class="price-list-link">
+                    <i class="fas fa-file-alt"></i> Price List
+                </a>
+                <a href="https://wa.me/6282142544990" class="whatsapp-link">
+                    <i class="fab fa-whatsapp"></i> Contact Me
+                </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hatchback -->
+        <!-- New Yaris -->
+        <div class="card p-0" data-name="Hatchback">
+          <img src="assets/hatchback/Yaris.png" alt="img" />
+          <div class="card-body">
+            <h4/h4 class="card-title">New Yaris</h4>
+            <p class="card-text">
+              Starting From Rp282.700.000</p>
+              <div class="card-links">
+                <a href="https://drive.google.com/file/d/1VwBfU5uOk-C8SGdTRoHFNPbXMj4HvgCL/view?usp=sharing" class="price-list-link">
+                    <i class="fas fa-file-alt"></i> Price List
+                </a>
+                <a href="https://wa.me/6282142544990" class="whatsapp-link">
+                    <i class="fab fa-whatsapp"></i> Contact Me
+                </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- New Agya -->
+        <div class="card p-0" data-name="Hatchback">
+          <img src="assets/hatchback/agya.png" alt="img" />
+          <div class="card-body">
+            <h4/h4 class="card-title">All New Agya</h4>
+            <p class="card-text">
+              Starting From Rp167.900.000</p>
+              <div class="card-links">
+                <a href="https://drive.google.com/file/d/1VwBfU5uOk-C8SGdTRoHFNPbXMj4HvgCL/view?usp=sharing" class="price-list-link">
+                    <i class="fas fa-file-alt"></i> Price List
+                </a>
+                <a href="https://wa.me/6282142544990" class="whatsapp-link">
+                    <i class="fab fa-whatsapp"></i> Contact Me
+                </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sedan -->
+        <!-- Corrolla Altis -->
+        <div class="card p-0" data-name="Sedan">
+          <img src="assets/sedan/corolla_altis.png" alt="img" />
+          <div class="card-body">
+            <h4/h4 class="card-title">New Corrolla Altis</h4>
+            <p class="card-text">
+              Starting From Rp566.700.000</p>
+              <div class="card-links">
+                <a href="https://drive.google.com/file/d/1VwBfU5uOk-C8SGdTRoHFNPbXMj4HvgCL/view?usp=sharing" class="price-list-link">
+                    <i class="fas fa-file-alt"></i> Price List
+                </a>
+                <a href="https://wa.me/6282142544990" class="whatsapp-link">
+                    <i class="fab fa-whatsapp"></i> Contact Me
+                </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Camry -->
+        <div class="card p-0" data-name="Sedan">
+          <img src="assets/sedan/camry.png" alt="img" />
+          <div class="card-body">
+            <h4/h4 class="card-title">New Camry</h4>
+            <p class="card-text">
+              Starting From Rp799.300.000</p>
+              <div class="card-links">
+                <a href="https://drive.google.com/file/d/1VwBfU5uOk-C8SGdTRoHFNPbXMj4HvgCL/view?usp=sharing" class="price-list-link">
+                    <i class="fas fa-file-alt"></i> Price List
+                </a>
+                <a href="https://wa.me/6282142544990" class="whatsapp-link">
+                    <i class="fab fa-whatsapp"></i> Contact Me
+                </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vios -->
+        <div class="card p-0" data-name="Sedan">
+          <img src="assets/sedan/vios.png" alt="img" />
+          <div class="card-body">
+            <h4/h4 class="card-title">All New Vios</h4>
+            <p class="card-text">
+              Starting From Rp363.200.000</p>
+              <div class="card-links">
+                <a href="https://drive.google.com/file/d/1VwBfU5uOk-C8SGdTRoHFNPbXMj4HvgCL/view?usp=sharing" class="price-list-link">
+                    <i class="fas fa-file-alt"></i> Price List
+                </a>
+                <a href="https://wa.me/6282142544990" class="whatsapp-link">
+                    <i class="fab fa-whatsapp"></i> Contact Me
+                </a>
+            </div>
+          </div>
+        </div>
+        
+
+        <!-- Sport -->
+        <!-- Supra -->
+        <div class="card p-0" data-name="Sport">
+          <img src="assets/Sport/supra.png" alt="img" />
+          <div class="card-body">
+            <h4/h4 class="card-title">New GR Supra</h4>
+            <p class="card-text">
+              Starting From Rp2.237.600.000</p>
+              <div class="card-links">
+                <a href="https://drive.google.com/file/d/1VwBfU5uOk-C8SGdTRoHFNPbXMj4HvgCL/view?usp=sharing" class="price-list-link">
+                    <i class="fas fa-file-alt"></i> Price List
+                </a>
+                <a href="https://wa.me/6282142544990" class="whatsapp-link">
+                    <i class="fab fa-whatsapp"></i> Contact Me
+                </a>
+            </div>
+          </div>
+        </div>
+
+         <!-- gr86 -->
+         <div class="card p-0" data-name="Sport">
+          <img src="assets/Sport/gr_86.png" alt="img" />
+          <div class="card-body">
+            <h4/h4 class="card-title">All New Gr 86</h4>
+            <p class="card-text">
+              Starting From Rp998.600.000</p>
+              <div class="card-links">
+                <a href="https://drive.google.com/file/d/1VwBfU5uOk-C8SGdTRoHFNPbXMj4HvgCL/view?usp=sharing" class="price-list-link">
+                    <i class="fas fa-file-alt"></i> Price List
+                </a>
+                <a href="https://wa.me/6282142544990" class="whatsapp-link">
+                    <i class="fab fa-whatsapp"></i> Contact Me
+                </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Commercial -->
+        <!-- hilux d cab -->
+        <div class="card p-0" data-name="Commercial">
+          <img src="assets/commercial/hilux_d.png" alt="img" />
+          <div class="card-body">
+            <h4/h4 class="card-title">New Hilux D Cab</h4>
+            <p class="card-text">
+              Starting From Rp442.200.000</p>
+              <div class="card-links">
+                <a href="https://drive.google.com/file/d/1VwBfU5uOk-C8SGdTRoHFNPbXMj4HvgCL/view?usp=sharing" class="price-list-link">
+                    <i class="fas fa-file-alt"></i> Price List
+                </a>
+                <a href="https://wa.me/6282142544990" class="whatsapp-link">
+                    <i class="fab fa-whatsapp"></i> Contact Me
+                </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- hilux s cab -->
+        <div class="card p-0" data-name="Commercial">
+          <img src="assets/commercial/hilux_s.png" alt="img" />
+          <div class="card-body">
+            <h4/h4 class="card-title">New Hilux S Cab </h4>
+            <p class="card-text">
+              Starting From Rp281.900.000</p>
+              <div class="card-links">
+                <a href="https://drive.google.com/file/d/1VwBfU5uOk-C8SGdTRoHFNPbXMj4HvgCL/view?usp=sharing" class="price-list-link">
+                    <i class="fas fa-file-alt"></i> Price List
+                </a>
+                <a href="https://wa.me/6282142544990" class="whatsapp-link">
+                    <i class="fab fa-whatsapp"></i> Contact Me
+                </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hiace Commuter -->
+        <div class="card p-0" data-name="Commercial">
+          <img src="assets/commercial/hiace_commuter.png" alt="img" />
+          <div class="card-body">
+            <h4/h4 class="card-title">New Hiace Commuter</h4>
+            <p class="card-text">
+              Starting From Rp561.800.000</p>
+              <div class="card-links">
+                <a href="https://drive.google.com/file/d/1VwBfU5uOk-C8SGdTRoHFNPbXMj4HvgCL/view?usp=sharing" class="price-list-link">
+                    <i class="fas fa-file-alt"></i> Price List
+                </a>
+                <a href="https://wa.me/6282142544990" class="whatsapp-link">
+                    <i class="fab fa-whatsapp"></i> Contact Me
+                </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- hiace_premio -->
+        <div class="card p-0" data-name="Commercial">
+          <img src="assets/commercial/hiace_premio.png" alt="img" />
+          <div class="card-body">
+            <h4/h4 class="card-title">New Hiace Premio</h4>
+            <p class="card-text">
+              Starting From Rp647.300.000</p>
+              <div class="card-links">
+                <a href="https://drive.google.com/file/d/1VwBfU5uOk-C8SGdTRoHFNPbXMj4HvgCL/view?usp=sharing" class="price-list-link">
+                    <i class="fas fa-file-alt"></i> Price List
+                </a>
+                <a href="https://wa.me/6282142544990" class="whatsapp-link">
+                    <i class="fab fa-whatsapp"></i> Contact Me
+                </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      </section>
+
+    <section class="section__container dokumentasi_container" id="dokumentasi">
+      <h2 class="section__header">Dokumentasi <span class="text__style">Kami.</span></h2>
+    <div class="container">
+      <div class="slider-wrapper">
+        <button id="prev-slide" class="slide-button material-symbols-rounded">
+          chevron_left
+        </button>
+        <ul class="image-list">
+          <img class="image-item" src="assets/dokumentasi/dok1.jpg" alt="img-1" />
+          <img class="image-item" src="assets/dokumentasi/dok2.jpg" alt="img-2" />
+          <img class="image-item" src="assets/dokumentasi/dok3.jpg" alt="img-3" />
+          <img class="image-item" src="assets/dokumentasi/dok4.jpg" alt="img-4" />
+          <img class="image-item" src="assets/dokumentasi/dok5.jpg" alt="img-5" />
+          <img class="image-item" src="assets/dokumentasi/dok6.jpg" alt="img-1" />
+          <img class="image-item" src="assets/dokumentasi/dok7.jpg" alt="img-2" />
+          <img class="image-item" src="assets/dokumentasi/dok8.jpg" alt="img-3" />
+          <img class="image-item" src="assets/dokumentasi/dok9.jpg" alt="img-4" />
+          <img class="image-item" src="assets/dokumentasi/dok10.jpg" alt="img-5" />
+        </ul>
+        <button id="next-slide" class="slide-button material-symbols-rounded">
+          chevron_right
+        </button>
+      </div>
+      <div class="slider-scrollbar">
+        <div class="scrollbar-track">
+          <div class="scrollbar-thumb"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section__container promo_container" id="promo">
+    <h2 class="section__header">Promo <span class="text__style">Kami.</span></h2>
+  <div class="container">
+    <div class="slider-wrapper">
+      <ul class="image-list">
+        <img class="image-item" src="assets/event/event1.jpg" alt="img-1" />
+        <img class="image-item" src="assets/event/event2.jpg" alt="img-2" />
+        <img class="image-item" src="assets/event/event3.jpg" alt="img-3" />
+        <img class="image-item" src="assets/event/event4.jpg" alt="img-4" />
+        <img class="image-item" src="assets/event/event5.jpg" alt="img-5" />
+      </ul>
+    </div>
+  </div>
+</section>
+
+    <section class="section__container testimonial__container" id="client">
+      <h2 class="section__header">100% <span class="text__style">Terpercaya</span></h2>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="testimonial__card">
+              <img src="assets/trust.png" alt="testimonial" />
+              <p>"No.1 memiliki Pengalaman dalam memberikan pelayanan, kenyamanan, dan kualitas mobil dengan harga terbaik di Jawa Timur dan sekitarnya."<p>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="section__container maps_container">
+      <h2 class="section__header">Alamat <span class="text__style">Kami.</span></h2>
+    <div class="maps-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.885839602509!2d112.65659360908431!3d-7.906993392083272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd62a31afbeabad%3A0xff889510c4d05da!2sTOYOTA%20KARTIKA%20SARI%20MALANG!5e0!3m2!1sen!2sid!4v1710777378153!5m2!1sen!2sid" width="1800" height="650" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+    <footer class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo footer__logo">
+            <a href="#"><img src="assets/logo.png" alt="logo" /></a>
+          </div>
+          <ul class="footer__socials">
+            <li>
+              <a href="https://wa.me/6282142544990"><i class="ri-whatsapp-fill"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/ellen.promotoyota/"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/Promo Toyota Malang Jawa Timur"><i class="ri-facebook-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contact Info</h4>
+          <ul class="footer__links">
+            <li>
+              <p>
+                Toyota Kartika Sari - Malang
+                Jalan Raya Mondoroko, Mondoroko, Candirenggo, Kec. Singosari, Kabupaten Malang, Jawa Timur 65153
+              </p>
+            </li>
+            <li>
+              <p>Phone: <span>+62 82142544990</span></p>
+            </li>
+            <li>
+              <p>Email: <span>ellentsana64@gmail.com</span></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="footer__bar">
+      Copyright © 2024. All rights reserved.
+    </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

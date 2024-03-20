@@ -1,0 +1,95 @@
+ <section class="section__container price__container" id="price">
+    <p class="section__subheader">BEST PACKAGES</p>
+    <h2 class="section__header">Our Pricing Plans</h2>
+    <p class="section__description">
+      We offer a range of affordable and flexible pricing options.
+    </p>
+    <!-- Images Filter Buttons Section -->
+    <div class="container">
+      <div class="row mt-5" id="filter-buttons">
+        <div class="col-12">
+          <button class="btn mb-2 mx-1 active" data-filter="MPV">MPV</button>
+          <button class="btn mb-2 mx-1" data-filter="cars">Cars</button>
+          <button class="btn mb-2 mx-1" data-filter="people">People</button>
+        </div>
+      </div>
+
+      <!-- Filterable Images / Cards Section -->
+      <div class="row px-2 mt-4 gap-3" id="filterable-cards">
+        <div class="card p-0" data-name="MPV">
+          <img src="assets/innova_zenix.png" alt="img" />
+          <div class="card-body">
+            <p class="card-text">All New Innova Zenix</p>
+            <h6 class="card-title">All New Innova Zenix</h6>
+          </div>
+        </div>
+        <div class="card p-0" data-name="MPV">
+          <img src="assets/voxy.png" alt="img" />
+          <div class="card-body">
+            <h6 class="card-title">Lights</h6>
+            <p class="card-text">Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <div class="card p-0" data-name="MPV">
+          <img src="assets/calya.png" alt="img" />
+          <div class="card-body">
+            <h6 class="card-title">Nature</h6>
+            <p class="card-text">Lorem ipsum dolor..</p>
+          </div>
+        </div>
+        <div class="card p-0" data-name="cars">
+MPV = All New Avanza (V) = Starting From
+Rp237.100.000
+MPV = New Calya (V) = Starting From
+Rp164.700.000
+MPV = New Kijang innova (V) = Starting From
+Rp379.100.000
+MPV = All New Kijang innova Zenix (V) = Starting From
+Rp425.600.000
+MPV = Voxy (V) = Starting From
+Rp607.800.000
+MPV = All New Alphard (V) = Starting From
+Rp1.814.700.000
+
+SUV = All New Yaris Cross (V) = Starting From
+Rp351.000.000
+SUV = New Corrolla Cross (V) = Starting From
+Rp568.200.000
+SUV = All New Bz4x (V) = Starting From
+Rp1.190.000.000
+SUV = All New Fortuner (V) = Starting From
+Rp564.200.000 
+SUV = All New Raize (V) = Starting From
+Rp235.000.000
+SUV = All New Land Cruiser (V) = Starting From
+Rp2.533.400.000
+SUV = New Rush (V) = Starting From
+Rp282.700.000
+ 
+HATCHBACK = New Yaris (V) = Starting From
+Rp326.100.000
+HATCHBACK = All New Agya (V) = Starting From
+Rp167.900.000
+
+SEDAN = New Corrolla Altis (V) = Starting From
+Rp566.700.000
+SEDAN = New Camry (V) = Starting From
+Rp799.300.000
+SEDAN = All New Vios (V) = Starting From
+Rp363.200.000
+
+SPORT = New GR Supra (V) =Starting From
+Rp2.237.600.000
+SPORT = All New Gr 86 (V) = Starting From
+Rp998.600.000
+
+Commercial = New Hiace Premio = Starting From
+Rp647.300.000
+Commercial = New Hiace Commuter = Starting From
+Rp561.800.000
+Commercial = New Hilux D Cab (V) = Starting From
+Rp442.200.000
+Commercial = New Hilux S Cab (V) = Starting From
+Rp281.900.000
+
+
